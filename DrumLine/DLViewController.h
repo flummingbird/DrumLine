@@ -7,7 +7,32 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PdDispatcher.h"
+#include <CoreMotion/CoreMotion.h>
+#include <AVFoundation/AVFoundation.h>
+#include <QuartzCore/QuartzCore.h>
 
-@interface DLViewController : UIViewController
+@interface DLViewController : UIViewController {
+    PdDispatcher *dispatcher;
+    void *patch;
+    
+    CMMotionManager *_motionManager;
+    CMAttitude *referenceAttitude;
+    
+    NSTimer *accelUpdate;
+    NSTimer *torchTimer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

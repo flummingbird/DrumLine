@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631980D518A1F44000298B8F /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 636DD1D5163A307600C3FCB7 /* libpd-ios.a */; };
+		631980D818A1F52C00298B8F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631980D718A1F52C00298B8F /* CoreMotion.framework */; };
+		631980DB18A1F6E900298B8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631980D918A1F56800298B8F /* QuartzCore.framework */; };
 		634D511C163A303300AEB82C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634D511B163A303300AEB82C /* UIKit.framework */; };
 		634D511E163A303300AEB82C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634D511D163A303300AEB82C /* Foundation.framework */; };
 		634D5120163A303300AEB82C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634D511F163A303300AEB82C /* CoreGraphics.framework */; };
@@ -19,9 +22,38 @@
 		634D5135163A303300AEB82C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634D5133163A303300AEB82C /* MainStoryboard_iPhone.storyboard */; };
 		634D5138163A303300AEB82C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634D5136163A303300AEB82C /* MainStoryboard_iPad.storyboard */; };
 		634D513B163A303300AEB82C /* DLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634D513A163A303300AEB82C /* DLViewController.m */; };
+		636DD1DD163A30DB00C3FCB7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636DD1DC163A30DB00C3FCB7 /* AudioToolbox.framework */; };
+		636DD1DF163A30DE00C3FCB7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636DD1DE163A30DE00C3FCB7 /* AVFoundation.framework */; };
+		636DD1F9163A3CFB00C3FCB7 /* Drumline1_0.pd in Resources */ = {isa = PBXBuildFile; fileRef = 636DD1F8163A3CFB00C3FCB7 /* Drumline1_0.pd */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		636DD1D4163A307600C3FCB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636DD1CC163A307600C3FCB7 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		636DD1D6163A307600C3FCB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636DD1CC163A307600C3FCB7 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		636DD1D9163A30D200C3FCB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636DD1CC163A307600C3FCB7 /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		631980D718A1F52C00298B8F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		631980D918A1F56800298B8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		634D5117163A303300AEB82C /* DrumLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrumLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		634D511B163A303300AEB82C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		634D511D163A303300AEB82C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +71,10 @@
 		634D5137163A303300AEB82C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		634D5139163A303300AEB82C /* DLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLViewController.h; sourceTree = "<group>"; };
 		634D513A163A303300AEB82C /* DLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLViewController.m; sourceTree = "<group>"; };
+		636DD1CC163A307600C3FCB7 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = libpd/libpd.xcodeproj; sourceTree = "<group>"; };
+		636DD1DC163A30DB00C3FCB7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		636DD1DE163A30DE00C3FCB7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		636DD1F8163A3CFB00C3FCB7 /* Drumline1_0.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Drumline1_0.pd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +82,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631980DB18A1F6E900298B8F /* QuartzCore.framework in Frameworks */,
+				631980D818A1F52C00298B8F /* CoreMotion.framework in Frameworks */,
+				631980D518A1F44000298B8F /* libpd-ios.a in Frameworks */,
+				636DD1DF163A30DE00C3FCB7 /* AVFoundation.framework in Frameworks */,
+				636DD1DD163A30DB00C3FCB7 /* AudioToolbox.framework in Frameworks */,
 				634D511C163A303300AEB82C /* UIKit.framework in Frameworks */,
 				634D511E163A303300AEB82C /* Foundation.framework in Frameworks */,
 				634D5120163A303300AEB82C /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +99,10 @@
 		634D510C163A303300AEB82C = {
 			isa = PBXGroup;
 			children = (
+				636DD1F8163A3CFB00C3FCB7 /* Drumline1_0.pd */,
+				636DD1DE163A30DE00C3FCB7 /* AVFoundation.framework */,
+				636DD1DC163A30DB00C3FCB7 /* AudioToolbox.framework */,
+				636DD1CC163A307600C3FCB7 /* libpd.xcodeproj */,
 				634D5121163A303300AEB82C /* DrumLine */,
 				634D511A163A303300AEB82C /* Frameworks */,
 				634D5118163A303300AEB82C /* Products */,
@@ -75,6 +120,8 @@
 		634D511A163A303300AEB82C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				631980D918A1F56800298B8F /* QuartzCore.framework */,
+				631980D718A1F52C00298B8F /* CoreMotion.framework */,
 				634D511B163A303300AEB82C /* UIKit.framework */,
 				634D511D163A303300AEB82C /* Foundation.framework */,
 				634D511F163A303300AEB82C /* CoreGraphics.framework */,
@@ -110,6 +157,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		636DD1CD163A307600C3FCB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				636DD1D5163A307600C3FCB7 /* libpd-ios.a */,
+				636DD1D7163A307600C3FCB7 /* libpd-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +180,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				636DD1DA163A30D200C3FCB7 /* PBXTargetDependency */,
 			);
 			name = DrumLine;
 			productName = DrumLine;
@@ -150,12 +207,35 @@
 			mainGroup = 634D510C163A303300AEB82C;
 			productRefGroup = 634D5118163A303300AEB82C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 636DD1CD163A307600C3FCB7 /* Products */;
+					ProjectRef = 636DD1CC163A307600C3FCB7 /* libpd.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				634D5116163A303300AEB82C /* DrumLine */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		636DD1D5163A307600C3FCB7 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = 636DD1D4163A307600C3FCB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		636DD1D7163A307600C3FCB7 /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = 636DD1D6163A307600C3FCB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		634D5115163A303300AEB82C /* Resources */ = {
@@ -168,6 +248,7 @@
 				634D5132163A303300AEB82C /* Default-568h@2x.png in Resources */,
 				634D5135163A303300AEB82C /* MainStoryboard_iPhone.storyboard in Resources */,
 				634D5138163A303300AEB82C /* MainStoryboard_iPad.storyboard in Resources */,
+				636DD1F9163A3CFB00C3FCB7 /* Drumline1_0.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +266,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		636DD1DA163A30D200C3FCB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = 636DD1D9163A30D200C3FCB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		634D5124163A303300AEB82C /* InfoPlist.strings */ = {
@@ -269,10 +358,17 @@
 		634D513F163A303300AEB82C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DrumLine/DrumLine-Prefix.pch";
 				INFOPLIST_FILE = "DrumLine/DrumLine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DPD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "/Users/dsholmes/Documents/Xcode\\ Projects/Daleks/libpd/../../**";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -280,10 +376,17 @@
 		634D5140163A303300AEB82C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DrumLine/DrumLine-Prefix.pch";
 				INFOPLIST_FILE = "DrumLine/DrumLine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DPD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "/Users/dsholmes/Documents/Xcode\\ Projects/Daleks/libpd/../../**";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -307,6 +410,7 @@
 				634D5140163A303300AEB82C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
