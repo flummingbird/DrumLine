@@ -1,4 +1,4 @@
-#N canvas 229 22 948 720 10;
+#N canvas 229 22 1010 810 10;
 #X obj 513 386 tabplay~ 1.sample.array;
 #X obj 513 350 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -10182,9 +10182,6 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 1 112426 -1 200 120 1;
 #X restore 185 330 graph;
-#X obj 115 171 soundfiler;
-#X msg 125 95 read -resize /Users/dsholmes/Desktop/tom.wav 1.sample.array
-;
 #X obj 680 345 s 1.window;
 #X obj 762 346 s 1.transpose;
 #X obj 535 348 r 1.bang;
@@ -10192,15 +10189,22 @@
 #X obj 763 235 loadbang;
 #X msg 682 293 10;
 #X msg 762 292 -2;
-#X text 31 673 Copyright (c) Danny Holmes 2014 All rights reserved.
-;
+#X text -142 605 This program is free software: you can redistribute
+it and/or modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or any later version. This program is distributed in
+the hope that it will be useful \, but WITHOUT ANY WARRANTY \; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. See the GNU General Public License for more details. You should
+have received a copy of the GNU General Public License along with this
+program. If not \, see <http://www.gnu.org/licenses/>.;
+#X text -143 590 Copyright (c) 2014 Danny Holmes;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
-#X connect 2 0 9 0;
-#X connect 2 0 9 1;
-#X connect 5 0 4 0;
-#X connect 8 0 0 0;
-#X connect 10 0 12 0;
-#X connect 10 0 11 0;
-#X connect 11 0 6 0;
-#X connect 12 0 7 0;
+#X connect 2 0 7 0;
+#X connect 2 0 7 1;
+#X connect 6 0 0 0;
+#X connect 8 0 10 0;
+#X connect 8 0 9 0;
+#X connect 9 0 4 0;
+#X connect 10 0 5 0;

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4ACB605C-CED1-4541-BB2F-1B065F83BA1B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DrumLine</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>58637FB0-9031-45B9-96DA-331024A6AB71</key>
+		<string>https://github.com/dsholmes/DrumLine.git</string>
+		<key>872A5B6B-370C-4D55-95A2-E2AD871EA0B5</key>
+		<string>git://github.com/libpd/libpd.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DrumLine.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>58637FB0-9031-45B9-96DA-331024A6AB71</key>
+		<string>../..</string>
+		<key>872A5B6B-370C-4D55-95A2-E2AD871EA0B5</key>
+		<string>../../libpd</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dsholmes/DrumLine.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>58637FB0-9031-45B9-96DA-331024A6AB71</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>58637FB0-9031-45B9-96DA-331024A6AB71</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DrumLine</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>872A5B6B-370C-4D55-95A2-E2AD871EA0B5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libpd</string>
+		</dict>
+	</array>
+</dict>
+</plist>
