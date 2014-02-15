@@ -25,6 +25,7 @@
 		636DD1DD163A30DB00C3FCB7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636DD1DC163A30DB00C3FCB7 /* AudioToolbox.framework */; };
 		636DD1DF163A30DE00C3FCB7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636DD1DE163A30DE00C3FCB7 /* AVFoundation.framework */; };
 		636DD1F9163A3CFB00C3FCB7 /* Drumline1_0.pd in Resources */ = {isa = PBXBuildFile; fileRef = 636DD1F8163A3CFB00C3FCB7 /* Drumline1_0.pd */; };
+		63AFAF8F18B0317D00BB5686 /* GNU GPL v2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 63AFAF8E18B0317D00BB5686 /* GNU GPL v2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		636DD1DC163A30DB00C3FCB7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		636DD1DE163A30DE00C3FCB7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		636DD1F8163A3CFB00C3FCB7 /* Drumline1_0.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Drumline1_0.pd; sourceTree = "<group>"; };
+		63AFAF8E18B0317D00BB5686 /* GNU GPL v2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GNU GPL v2.txt"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		634D5122163A303300AEB82C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63AFAF8E18B0317D00BB5686 /* GNU GPL v2.txt */,
 				634D5123163A303300AEB82C /* DrumLine-Info.plist */,
 				634D5124163A303300AEB82C /* InfoPlist.strings */,
 				634D5127163A303300AEB82C /* main.m */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634D5126163A303300AEB82C /* InfoPlist.strings in Resources */,
+				63AFAF8F18B0317D00BB5686 /* GNU GPL v2.txt in Resources */,
 				634D512E163A303300AEB82C /* Default.png in Resources */,
 				634D5130163A303300AEB82C /* Default@2x.png in Resources */,
 				634D5132163A303300AEB82C /* Default-568h@2x.png in Resources */,

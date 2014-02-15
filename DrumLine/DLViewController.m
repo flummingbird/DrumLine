@@ -6,10 +6,10 @@
 
 //  Copyright (c) 2014 Danny Holmes.
 
-//This program is free software: you can redistribute it and/or modify
-//it under the terms of the GNU General Public License as published by
-//the Free Software Foundation, either version 3 of the License, or
-//(at your option) any later version.
+//This program is free software; you can redistribute it and/or
+//modify it under the terms of the GNU General Public License
+//as published by the Free Software Foundation; either version 2
+//of the License, or (at your option) any later version.
 //
 //This program is distributed in the hope that it will be useful,
 //but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -17,8 +17,7 @@
 //GNU General Public License for more details.
 //
 //You should have received a copy of the GNU General Public License
-//along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//
+//along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 #import "DLViewController.h"
 
@@ -73,27 +72,27 @@
     
     const NSTimeInterval dt = (1.0 / 20);
     const double RCX = 0.1;
-    //const double RCY = 0.5;
+    const double RCY = 0.3;
     const double alphaX = dt / (RCX + dt);
-    //const double alphaY = dt / (RCY + dt);
+    const double alphaY = dt / (RCY + dt);
     
     CMAcceleration smoothed;
     smoothed.x = (alphaX * acceleration.x) + (1.0 - alphaX) * x0;
-    //smoothed.y = (alphaY * acceleration.y) + (1.0 - alphaY) * y0;
+    smoothed.y = (alphaY * acceleration.y) + (1.0 - alphaY) * y0;
     
     x0 = smoothed.x;
-    //y0 = smoothed.y;
+    y0 = smoothed.y;
     
     NSLog(@"x %f",x0);
     
     
     //float y = y0 * 40.0;
     
-    //NSLog(@"y %f",y);
+    NSLog(@"y %f",y0);
     
     [self detectZeroCrossingX:x0];
     //[PdBase sendFloat:y toReceiver:@"1.transpose"];
-    //[self detectZeroCrossingY:y0];
+    [self detectZeroCrossingY:y0];
 }
 
 - (void)detectZeroCrossingX:(float)accel {
@@ -118,27 +117,27 @@
     }
 }
 
-//- (void)detectZeroCrossingY:(float)accel {
-//    if (accel > -.5) {
-//        if (_aboveZeroY == 0) {
-//            _aboveZeroY = 1;
-//            [PdBase sendBangToReceiver:@"1.bang"];
-//            [self torchOnOff:1];
-//            [self torchOnOff:0];
-//            [self animateBackground];
-//        }
-//    }
-//    
-//    if (accel < -.5) {
-//        if (_aboveZeroY == 1) {
-//            _aboveZeroY = 0;
-//            [PdBase sendBangToReceiver:@"1.bang"];
-//            [self torchOnOff:1];
-//            [self torchOnOff:0];
-//            [self animateBackground];
-//        }
-//    }
-//}
+- (void)detectZeroCrossingY:(float)accel {
+    if (accel > -.5) {
+        if (_aboveZeroY == 0) {
+            _aboveZeroY = 1;
+            [PdBase sendBangToReceiver:@"1.bang"];
+            [self torchOnOff:1];
+            [self torchOnOff:0];
+            [self animateBackground];
+        }
+    }
+    
+    if (accel < -.5) {
+        if (_aboveZeroY == 1) {
+            _aboveZeroY = 0;
+            [PdBase sendBangToReceiver:@"1.bang"];
+            [self torchOnOff:1];
+            [self torchOnOff:0];
+            [self animateBackground];
+        }
+    }
+}
 
 
 - (void)torchOnOff: (BOOL) onOff
